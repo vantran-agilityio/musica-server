@@ -1,0 +1,31 @@
+{
+  "name": "musica-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.12.6",
+    "@strapi/plugin-users-permissions": "4.12.6",
+    "@strapi/provider-upload-cloudinary": "^4.12.6",
+    "@strapi/strapi": "4.12.6",
+    "pg": "8.8.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "14217e5f-6870-4cca-a589-7d6f37a32a05"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
