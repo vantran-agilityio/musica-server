@@ -65,15 +65,14 @@
       "inversedBy": "users",
       "configurable": false
     },
+    "player": {
+      "type": "json",
+      "required": true
+    },
     "my_collection": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::my-collection.my-collection"
-    },
-    "player": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::player.player"
     }
   }
 }

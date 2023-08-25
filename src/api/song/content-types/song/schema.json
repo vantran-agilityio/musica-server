@@ -25,11 +25,6 @@
         "audios"
       ]
     },
-    "plays": {
-      "type": "integer",
-      "min": 0,
-      "default": 0
-    },
     "artists": {
       "type": "relation",
       "relation": "oneToMany",
