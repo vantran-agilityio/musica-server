@@ -4,7 +4,7 @@
   "info": {
     "singularName": "my-collection",
     "pluralName": "my-collections",
-    "displayName": "my-collection",
+    "displayName": "My collection",
     "description": ""
   },
   "options": {
@@ -16,12 +16,6 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::album.album"
-    },
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "mappedBy": "my_collection"
     }
   }
 }

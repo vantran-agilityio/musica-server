@@ -4,7 +4,8 @@
   "info": {
     "singularName": "song",
     "pluralName": "songs",
-    "displayName": "song"
+    "displayName": "song",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,12 +18,12 @@
       "minLength": 1
     },
     "media": {
-      "allowedTypes": [
-        "audios"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "audios"
+      ]
     },
     "plays": {
       "type": "integer",
@@ -34,11 +35,11 @@
       "relation": "oneToMany",
       "target": "api::artist.artist"
     },
-    "player": {
+    "album": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::player.player",
-      "mappedBy": "song"
+      "relation": "manyToOne",
+      "target": "api::album.album",
+      "inversedBy": "songs"
     }
   }
 }

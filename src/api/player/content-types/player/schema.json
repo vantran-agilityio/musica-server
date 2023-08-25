@@ -4,7 +4,8 @@
   "info": {
     "singularName": "player",
     "pluralName": "players",
-    "displayName": "player"
+    "displayName": "player",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,14 +15,12 @@
     "song": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::song.song",
-      "inversedBy": "player"
+      "target": "api::song.song"
     },
-    "user": {
+    "album": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "plugin::users-permissions.user",
-      "mappedBy": "player"
+      "target": "api::album.album"
     }
   }
 }

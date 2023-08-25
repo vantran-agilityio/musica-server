@@ -68,14 +68,12 @@
     "my_collection": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::my-collection.my-collection",
-      "inversedBy": "user"
+      "target": "api::my-collection.my-collection"
     },
     "player": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::player.player",
-      "inversedBy": "user"
+      "target": "api::player.player"
     }
   }
 }

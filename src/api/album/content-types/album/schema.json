@@ -4,7 +4,8 @@
   "info": {
     "singularName": "album",
     "pluralName": "albums",
-    "displayName": "album"
+    "displayName": "album",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,23 +13,29 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "text",
+      "type": "string",
       "required": true,
       "minLength": 1
     },
     "thumbnail": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "description": {
       "type": "text"
     },
     "recentlyPlayedAt": {
       "type": "datetime"
+    },
+    "songs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::song.song",
+      "mappedBy": "album"
     }
   }
 }
