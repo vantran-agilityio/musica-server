@@ -35,6 +35,9 @@
       "relation": "manyToOne",
       "target": "api::album.album",
       "inversedBy": "songs"
+    },
+    "duration": {
+      "type": "integer"
     }
   }
 }
