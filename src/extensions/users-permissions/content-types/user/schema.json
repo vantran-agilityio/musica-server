@@ -65,14 +65,20 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "player": {
-      "type": "json",
-      "required": true
-    },
     "my_collection": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::my-collection.my-collection"
+    },
+    "song": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::song.song"
+    },
+    "album": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::album.album"
     }
   }
 }
