@@ -14,5 +14,10 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  "strapi-plugin-populate-deep": {
+    config: {
+      defaultDept: 2,
+    },
+  },
   // ...
 });
