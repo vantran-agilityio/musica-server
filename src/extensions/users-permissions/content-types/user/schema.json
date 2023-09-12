@@ -79,6 +79,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::album.album"
+    },
+    "albums": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::album.album"
     }
   }
 }
